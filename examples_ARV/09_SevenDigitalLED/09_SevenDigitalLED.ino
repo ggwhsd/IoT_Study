@@ -32,9 +32,10 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
    
-
-   digitalWrite(2,HIGH); 
-   digitalWrite(3,LOW); 
+ for(int i =0; i < LEDCount; i++)
+    {
+      digitalWrite(LEDPins[i],HIGH); 
+    }
    delay(1000);
    
    
